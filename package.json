@@ -1,0 +1,31 @@
+{
+  "name": "whistlerdigital",
+  "version": "1.0.0",
+  "description": "A sass underscores theme",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsteele883/whistlerdigital.git"
+  },
+  "keywords": [
+    "sass",
+    "grunt",
+    "autoprefixer",
+    "wordpress",
+    "flexbox"
+  ],
+  "author": "Jack Steele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsteele883/whistlerdigital/issues"
+  },
+  "homepage": "https://github.com/jsteele883/whistlerdigital#readme",
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1"
+  }
+}
