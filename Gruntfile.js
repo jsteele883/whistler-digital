@@ -12,18 +12,9 @@ module.exports = function(grunt){
           sourcemap: 'none',
         },
         files: {
-          'compiled/style-human.css': 'sass/style.scss',
-        }
-      },
-      dist: {
-        options: {
-          style: 'compressed',
-          sourcemap: 'none',
-        },
-        files: {
           'compiled/style.css': 'sass/style.scss',
         }
-      }
+      },
     },
     // autoprefixer task
     autoprefixer: {
