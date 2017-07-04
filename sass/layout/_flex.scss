@@ -1,0 +1,19 @@
+.site-content {
+  display: flex;
+}
+
+.content-area {
+  flex: 2;
+}
+
+.site-content .widget-area {
+  flex: 1;
+}
+
+.site-header {
+  display: flex;
+}
+
+.page_item {
+  padding: 10px;
+}
