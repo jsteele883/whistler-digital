@@ -117,6 +117,9 @@ add_action( 'widgets_init', 'whistlerdigital_widgets_init' );
  * Enqueue scripts and styles.
  */
 function whistlerdigital_scripts() {
+	// Enqueue Google Font Montserrat
+	wp_enqueue_style('whistlerdigital-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,600,800');
+
 	wp_enqueue_style( 'whistlerdigital-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'whistlerdigital-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

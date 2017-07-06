@@ -265,18 +265,13 @@ th {
 }
 
 .content-area {
-  -ms-flex: 2;
-      flex: 2;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .site-content .widget-area {
   -ms-flex: 1;
       flex: 1;
-}
-
-.site-header {
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .page_item {
@@ -297,7 +292,6 @@ textarea {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -306,12 +300,14 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: 1.3em;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
+  font-weight: 800;
 }
 
 h1 {
