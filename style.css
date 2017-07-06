@@ -289,9 +289,20 @@ optgroup,
 textarea {
   color: #404040;
   font-family: "Montserrat", Helvetica, serif;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 16.2px;
+  font-size: 1.0125rem;
   line-height: 1.5;
+}
+@media screen and (min-width: 700px) {
+  body,
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -312,23 +323,23 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.998em;
+  font-size: 3.16049em;
 }
 
 h2 {
-  font-size: 2.827em;
+  font-size: 2.37037em;
 }
 
 h3 {
-  font-size: 1.999em;
+  font-size: 2.37037em;
 }
 
 h4 {
-  font-size: 1.414em;
+  font-size: 1.33333em;
 }
 
 small, .font_small {
-  font-size: 0.707em;
+  font-size: 0.75em;
 }
 
 p {
@@ -350,8 +361,8 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 16.875px;
+  font-size: 1.05469rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -361,8 +372,8 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 16.875px;
+  font-size: 1.05469rem;
 }
 
 abbr, acronym {
@@ -467,8 +478,8 @@ input[type="submit"] {
   border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 13.5px;
+  font-size: 0.84375rem;
   line-height: 1;
   padding: .6em 1em .4em;
 }
@@ -659,8 +670,8 @@ a:hover, a:active {
   clip: auto !important;
   color: #21759b;
   display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 15.75px;
+  font-size: 0.98438rem;
   font-weight: bold;
   height: auto;
   left: 5px;

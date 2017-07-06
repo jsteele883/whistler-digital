@@ -9,7 +9,7 @@ module.exports = function(grunt){
       dev: {
         options: {
           style: 'expanded',
-          sourcemap: 'none',
+          sourcemap: 'auto',
         },
         files: {
           'compiled/style.css': 'sass/style.scss',
