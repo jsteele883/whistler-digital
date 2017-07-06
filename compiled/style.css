@@ -25,6 +25,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Normalize
 # Layout
 # Typography
+  ## ModularScale
+  ## Typography
 # Elements
 # Forms
 # Navigation
@@ -33,8 +35,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
-# Widgets
 # Content
+# Widgets
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -257,25 +259,6 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-.site-content {
-  display: flex;
-}
-
-.content-area {
-  flex: 1;
-}
-
-.site-content .widget-area {
-  flex: 1;
-}
-
-.page_item {
-  padding: 10px;
-}
-
-/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -308,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: 1.3em;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 h1, h2, h3, h4 {
@@ -328,7 +311,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.37037em;
+  font-size: 1.77778em;
 }
 
 h4 {
@@ -738,19 +721,34 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */
-}
-.widget select {
-  max-width: 100%;
-}
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.site-content {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .site-content {
+    padding: 2em;
+  }
+}
+
+.content-area {
+  flex: 1;
+}
+
+.site-content .widget-area {
+  flex: 1;
+}
+
+.page_item {
+  padding: 10px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -786,6 +784,17 @@ a:hover, a:active {
 
 .bypostauthor {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+.widget select {
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
