@@ -48,10 +48,19 @@
 }
 
 @media screen and (min-width: $query__medium) {
-  .site-header {
+	.site-header {
+		display: flex;
+		flex-direction: column;
+	}
+
+  .site-header__wrapper {
     display: flex;
     justify-content: space-between;
   }
+
+	.masthead-menu {
+		display: flex;
+	}
 
   .site-branding {
     width: 35%;

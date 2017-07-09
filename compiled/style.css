@@ -811,7 +811,16 @@ a:hover, a:active {
 @media screen and (min-width: 900px) {
   .site-header {
     display: flex;
+    flex-direction: column;
+  }
+
+  .site-header__wrapper {
+    display: flex;
     justify-content: space-between;
+  }
+
+  .masthead-menu {
+    display: flex;
   }
 
   .site-branding {

@@ -816,8 +816,20 @@ a:hover, a:active {
   .site-header {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+  .site-header__wrapper {
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
+  }
+
+  .masthead-menu {
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .site-branding {
