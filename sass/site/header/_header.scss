@@ -47,6 +47,14 @@
   font-size: ms(-1);
 }
 
+#masthead-menu {
+	display: flex;
+	flex-direction: column;
+	li {
+		list-style: none;
+	}
+}
+
 @media screen and (min-width: $query__medium) {
 	.site-header {
 		display: flex;
@@ -58,10 +66,6 @@
     justify-content: space-between;
   }
 
-	.masthead-menu {
-		display: flex;
-	}
-
   .site-branding {
     width: 35%;
   }
@@ -69,4 +73,14 @@
   .site-navigation {
     width: 55%;
   }
+
+	#masthead-menu {
+		flex-wrap: wrap;
+		flex-direction: row;
+		li {
+			flex: 1 0 33.333%;
+		  box-sizing: border-box;
+		  padding: 10px;
+		}
+	}
 }

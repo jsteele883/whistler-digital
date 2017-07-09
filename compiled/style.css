@@ -554,7 +554,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .main-navigation {
   clear: both;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   float: left;
   width: 100%;
 }
@@ -808,6 +809,14 @@ a:hover, a:active {
   font-size: 0.75em;
 }
 
+#masthead-menu {
+  display: flex;
+  flex-direction: column;
+}
+#masthead-menu li {
+  list-style: none;
+}
+
 @media screen and (min-width: 900px) {
   .site-header {
     display: flex;
@@ -819,16 +828,22 @@ a:hover, a:active {
     justify-content: space-between;
   }
 
-  .masthead-menu {
-    display: flex;
-  }
-
   .site-branding {
     width: 35%;
   }
 
   .site-navigation {
     width: 55%;
+  }
+
+  #masthead-menu {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #masthead-menu li {
+    flex: 1 0 33.333%;
+    box-sizing: border-box;
+    padding: 10px;
   }
 }
 /*--------------------------------------------------------------
