@@ -534,7 +534,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: pink;
+  color: #404040;
 }
 a:visited {
   color: purple;
@@ -556,8 +556,8 @@ a:hover, a:active {
   clear: both;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
   float: left;
   width: 100%;
 }
@@ -596,6 +596,9 @@ a:hover, a:active {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.5625em;
+  letter-spacing: 0.15rem;
 }
 
 /* Small menu. */

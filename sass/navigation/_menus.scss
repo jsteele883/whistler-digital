@@ -1,7 +1,7 @@
 .main-navigation {
 	clear: both;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	float: left;
 	width: 100%;
 
@@ -62,6 +62,9 @@
 	a {
 		display: block;
 		text-decoration: none;
+		text-transform: uppercase;
+		font-size: ms(-2);
+		letter-spacing: 0.15rem;
 	}
 
 	.current_page_item > a,
