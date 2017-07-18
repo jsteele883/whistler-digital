@@ -1,8 +1,8 @@
+/* Large header menu. */
 .main-navigation {
 	clear: both;
 	display: flex;
 	justify-content: center;
-	float: left;
 	width: 100%;
 
 	ul {
@@ -12,7 +12,7 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			background: $color__background-body;
 			float: left;
 			position: absolute;
 			top: 100%;
@@ -24,23 +24,8 @@
 				top: 0;
 			}
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
 			a {
 				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
 			}
 		}
 
@@ -65,12 +50,34 @@
 		text-transform: uppercase;
 		font-size: ms(-2);
 		letter-spacing: 0.15rem;
+
+		&::after {
+			content: '';
+	    display: block;
+	    width: 0;
+	    height: 2px;
+	    background: $color__text-main;
+	    transition: width .3s;
+		}
+		&:hover::after {
+	    width: 100%;
+		}
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
+	.children {
+		li:hover {
+			background-color: $color__background-button;
+		}
+		a::after {
+			height: 0px;
+		}
+	}
+
+	.current_page_item a,
+	.current-menu-item a,
+	.current_page_ancestor a,
+	.current-menu-ancestor a {
+		border-bottom: 2px solid $color__text-main;
 	}
 }
 
