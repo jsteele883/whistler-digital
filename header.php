@@ -52,16 +52,6 @@
 				?>
 			</nav><!-- #site-navigation -->
 		</div>
-		<?php if ( is_front_page()) : ?>
-			<div class="introduction" style="background-image: url(<?php header_image(); ?>)" height="<?php echo esc_attr( get_custom_header()-> height); ?>">
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-2',
-						'menu_id'        => 'masthead-menu',
-					) );
-				?>
-      </div>
-		<?php endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
