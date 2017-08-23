@@ -295,6 +295,7 @@ p {
 }
 
 h1, h2, h3, h4 {
+  font-family: "furious_stylesregular", "Montserrat", Helvetica, serif;
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
@@ -826,9 +827,6 @@ body,
 .site-title a {
   color: #404040;
   text-decoration: none;
-}
-.site-title a:hover, .site-title a:focus {
-  text-decoration: underline;
 }
 
 .site-description {

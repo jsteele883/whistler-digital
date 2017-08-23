@@ -48,11 +48,6 @@ body,
 	a {
 		color: $color__text-main;
 		text-decoration: none;
-
-		&:hover,
-		&:focus {
-			text-decoration: underline;
-		}
 	}
 }
 

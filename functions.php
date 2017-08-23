@@ -141,6 +141,9 @@ function whistlerdigital_scripts() {
 	// Enqueue Google Font Montserrat
 	wp_enqueue_style('whistlerdigital-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,600,800');
 
+	// Enqueue Font Furious Styles
+	wp_enqueue_style('whistlerdigital-webfont', get_template_directory_uri() . '/fonts.css' );
+
 	wp_enqueue_style( 'whistlerdigital-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'whistlerdigital-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
