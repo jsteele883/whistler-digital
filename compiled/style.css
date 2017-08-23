@@ -303,23 +303,23 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.16049em;
+  font-size: 3.160493824em;
 }
 
 h2 {
-  font-size: 2.37037em;
+  font-size: 2.3703703686em;
 }
 
 h3 {
-  font-size: 1.77778em;
+  font-size: 1.7777777769em;
 }
 
 h4 {
-  font-size: 1.33333em;
+  font-size: 1.333333333em;
 }
 
 small, .font_small {
-  font-size: 0.75em;
+  font-size: 0.7500000002em;
 }
 
 p {
@@ -342,7 +342,7 @@ pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 16.875px;
-  font-size: 1.05469rem;
+  font-size: 1.0546875rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -353,7 +353,7 @@ pre {
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 16.875px;
-  font-size: 1.05469rem;
+  font-size: 1.0546875rem;
 }
 
 abbr, acronym {
@@ -551,7 +551,6 @@ a:hover, a:active {
 .main-navigation {
   clear: both;
   display: flex;
-  justify-content: center;
   width: 100%;
 }
 .main-navigation ul {
@@ -587,7 +586,7 @@ a:hover, a:active {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.5625em;
+  font-size: 0.5625000003em;
   letter-spacing: 0.15rem;
 }
 .main-navigation a::after {
@@ -629,21 +628,17 @@ a:hover, a:active {
     display: block;
   }
 }
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
@@ -670,7 +665,7 @@ a:hover, a:active {
   color: #21759b;
   display: block;
   font-size: 15.75px;
-  font-size: 0.98438rem;
+  font-size: 0.984375rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -771,11 +766,22 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
+html,
+body,
+.site,
+.site-header {
+  height: 100%;
+}
+
 .site-header {
   position: relative;
   padding: 1em;
   font-family: "Montserrat", Helvetica, serif;
   color: #404040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   animation: colorchange 50s infinite ease;
 }
 @media screen and (min-width: 600px) {
@@ -803,6 +809,12 @@ a:hover, a:active {
 }
 .site-branding {
   min-height: 65px;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .site-title {
@@ -824,7 +836,7 @@ a:hover, a:active {
   font-size: .9em;
   font-style: italic;
   font-weight: 200;
-  font-size: 0.75em;
+  font-size: 0.7500000002em;
 }
 
 #masthead-menu {
@@ -988,7 +1000,7 @@ object {
   max-width: 50%;
 }
 .gallery-item .gallery-columns-3 {
-  max-width: 33.33333%;
+  max-width: 33.3333333333%;
 }
 .gallery-item .gallery-columns-4 {
   max-width: 25%;
@@ -997,16 +1009,16 @@ object {
   max-width: 20%;
 }
 .gallery-item .gallery-columns-6 {
-  max-width: 16.66667%;
+  max-width: 16.6666666667%;
 }
 .gallery-item .gallery-columns-7 {
-  max-width: 14.28571%;
+  max-width: 14.2857142857%;
 }
 .gallery-item .gallery-columns-8 {
   max-width: 12.5%;
 }
 .gallery-item .gallery-columns-9 {
-  max-width: 11.11111%;
+  max-width: 11.1111111111%;
 }
 
 .gallery-caption {

@@ -1,8 +1,19 @@
+html,
+body,
+.site,
+.site-header {
+	height: 100%;
+}
+
 .site-header {
 	position: relative;
 	padding: 1em;
 	font-family: $font__main;
 	color: $color__text-main;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	flex-direction: column;
 	animation: colorchange 50s infinite ease;
 
 	@media screen and (min-width: $query__small) {
@@ -20,6 +31,12 @@
 
 .site-branding {
 	min-height: 65px;
+	height: 80%;
+	text-align: center;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .site-title {
