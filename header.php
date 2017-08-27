@@ -41,15 +41,26 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'whistlerdigital' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="site-header__menus">
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'whistlerdigital' ); ?></button>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+				?>
+			</nav><!-- #site-navigation -->
+			<div id="social-menu" class="social-links">
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-2',
+						'menu_class'     => 'social-links-menu',
+						'menu_id'        => 'social-menu',
+					) );
+				?>
+			</div><!-- #social-menu -->
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -45,6 +45,7 @@ function whistlerdigital_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'whistlerdigital' ),
+		'menu-2' => esc_html__( 'Social Links Menu', 'whistlerdigital' ),
 	) );
 
 	/*
@@ -79,6 +80,36 @@ function whistlerdigital_setup() {
 		'flex-width'  => true,
 		'flex-height' => true,
 	) );
+
+	// Define and register starter content to showcase the theme on new sites.
+	$starter_content = array(
+
+		// Set up nav menus for each of the two areas registered in the theme.
+		'nav_menus' => array(
+			// Assign a menu to the "top" location.
+			'top' => array(
+				'name' => __( 'Primary', 'whistlerdigital' ),
+				'items' => array(
+					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+					'page_about',
+					'page_blog',
+					'page_contact',
+				),
+			),
+
+			// Assign a menu to the "social" location.
+			'social' => array(
+				'name' => __( 'Social Links Menu', 'whistlerdigital' ),
+				'items' => array(
+					'link_facebook',
+					'link_twitter',
+					'link_instagram',
+					'link_email',
+				),
+			),
+		),
+	);
+	add_theme_support( 'starter-content', $starter_content );
 }
 endif;
 add_action( 'after_setup_theme', 'whistlerdigital_setup' );
