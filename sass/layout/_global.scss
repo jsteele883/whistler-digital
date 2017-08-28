@@ -10,6 +10,8 @@
 
 .content-area {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .site-content .widget-area {
