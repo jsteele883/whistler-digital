@@ -269,7 +269,7 @@ optgroup,
 textarea {
   color: #404040;
   font-family: "Montserrat", Helvetica, serif;
-  font-size: 16.2px;
+  font-size: 14.4px;
   font-size: 1.0125rem;
   line-height: 1.5;
 }
@@ -280,7 +280,7 @@ textarea {
   select,
   optgroup,
   textarea {
-    font-size: 18px;
+    font-size: 16px;
     font-size: 1.125rem;
   }
 }
@@ -342,7 +342,7 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 16.875px;
+  font-size: 15px;
   font-size: 1.0546875rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -353,7 +353,7 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 16.875px;
+  font-size: 15px;
   font-size: 1.0546875rem;
 }
 
@@ -386,7 +386,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #FBFCFF;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -459,7 +459,7 @@ input[type="submit"] {
   border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 13.5px;
+  font-size: 12px;
   font-size: 0.84375rem;
   line-height: 1;
   padding: .6em 1em .4em;
@@ -562,7 +562,7 @@ a:hover, a:active {
   padding-left: 0;
 }
 .main-navigation ul ul {
-  background: #fff;
+  background: #FBFCFF;
   float: left;
   position: absolute;
   top: 100%;
@@ -660,13 +660,13 @@ a:hover, a:active {
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: #FBFCFF;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: #A8CABA;
   display: block;
-  font-size: 15.75px;
+  font-size: 14px;
   font-size: 0.984375rem;
   font-weight: bold;
   height: auto;
@@ -783,7 +783,7 @@ body,
   position: relative;
   padding: 1em;
   font-family: "Montserrat", Helvetica, serif;
-  color: #404040;
+  color: #FBFCFF;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -792,7 +792,7 @@ body,
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  animation: colorchange 50s infinite ease;
+  background: linear-gradient(to bottom, #5d4157 0%, #a8caba 100%);
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -800,23 +800,6 @@ body,
   }
 }
 
-@keyframes colorchange {
-  0% {
-    background: #D3C1C3;
-  }
-  25% {
-    background: #848C8E;
-  }
-  50% {
-    background: #EEE5BF;
-  }
-  75% {
-    background: #CEEAF7;
-  }
-  100% {
-    background: #D1FFC6;
-  }
-}
 .site-branding {
   min-height: 65px;
   height: 80%;
@@ -834,12 +817,12 @@ body,
 .site-title {
   margin: 0;
   padding: 0;
-  font-weight: 800;
-  line-height: 1em;
+  line-height: 200%;
 }
 .site-title a {
-  color: #404040;
+  color: #FBFCFF;
   text-decoration: none;
+  font-size: 2.3703703686em;
 }
 
 .site-description {
@@ -847,7 +830,7 @@ body,
   font-size: .9em;
   font-style: italic;
   font-weight: 200;
-  font-size: 0.7500000002em;
+  font-size: 1em;
 }
 
 .site-header__menus {

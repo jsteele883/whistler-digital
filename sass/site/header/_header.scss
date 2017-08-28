@@ -9,25 +9,17 @@ body,
 	position: relative;
 	padding: 1em;
 	font-family: $font__main;
-	color: $color__text-main;
+	color: $color__text-header;
 	display: flex;
   justify-content: space-between;
   align-items: center;
 	flex-direction: column;
-	animation: colorchange 50s infinite ease;
+	background: linear-gradient(to bottom, rgba(93,65,87,1) 0%, rgba(168,202,186,1) 100%);
 
 	@media screen and (min-width: $query__small) {
 		padding: 1em 2em;
 	}
 }
-
-@keyframes colorchange {
-    0%   {background: #D3C1C3;}
-    25%  {background: #848C8E;}
-    50%  {background: #EEE5BF;}
-    75%  {background: #CEEAF7;}
-    100% {background: #D1FFC6;}
-  }
 
 .site-branding {
 	min-height: 65px;
@@ -42,12 +34,12 @@ body,
 .site-title {
 	margin: 0;
 	padding: 0;
-	font-weight: 800;
-	line-height: 1em;
+	line-height: 200%;
 
 	a {
-		color: $color__text-main;
+		color: $color__text-header;
 		text-decoration: none;
+		font-size: ms(3)
 	}
 }
 
@@ -56,7 +48,7 @@ body,
 	font-size: .9em;
 	font-style: italic;
 	font-weight: 200;
-  font-size: ms(-1);
+  font-size: ms(0);
 }
 
 .site-header__menus {
