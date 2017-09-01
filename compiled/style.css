@@ -273,7 +273,7 @@ textarea {
   font-size: 1.0125rem;
   line-height: 1.5;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   body,
   button,
   input,
@@ -304,24 +304,24 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.160493824em;
+  font-size: 2.44140625em;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.3703703686em;
+  font-size: 1.953125em;
 }
 
 h3 {
-  font-size: 1.7777777769em;
+  font-size: 1.5625em;
 }
 
 h4 {
-  font-size: 1.333333333em;
+  font-size: 1.25em;
 }
 
 small, .font_small {
-  font-size: 0.7500000002em;
+  font-size: 0.8em;
 }
 
 p {
@@ -455,30 +455,29 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.84375rem;
+  background: transparent;
+  font-size: 0.8em;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
   line-height: 1;
-  padding: .6em 1em .4em;
+  transition: 0.5s;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #5D4157;
+  border: 2px solid #5D4157;
+  display: inline-block;
+  padding: 1.5em;
 }
-button:hover,
+button:hover, button:focus,
 input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-}
-button:active, button:focus,
-input[type="button"]:active,
 input[type="button"]:focus,
-input[type="reset"]:active,
+input[type="reset"]:hover,
 input[type="reset"]:focus,
-input[type="submit"]:active,
+input[type="submit"]:hover,
 input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
+  opacity: 1;
+  background: #5D4157;
+  color: #fff;
 }
 
 input[type="text"],
@@ -588,7 +587,7 @@ a:hover, a:active {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.5625000003em;
+  font-size: 0.64em;
   letter-spacing: 0.15rem;
 }
 .main-navigation a::after {
@@ -603,7 +602,7 @@ a:hover, a:active {
   width: 100%;
 }
 .main-navigation .children li:hover {
-  background-color: #e6e6e6;
+  background-color: #5D4157;
 }
 .main-navigation .children a::after {
   height: 0px;
@@ -787,6 +786,7 @@ body,
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to bottom, #5d4157 0%, #a8caba 100%);
+  background-attachment: fixed;
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -812,7 +812,7 @@ body,
 .site-title a {
   color: #FBFCFF;
   text-decoration: none;
-  font-size: 3.160493824em;
+  font-size: 2.44140625em;
   font-family: "furious_stylesregular", "Montserrat", Helvetica, serif;
 }
 
@@ -831,6 +831,13 @@ body,
   width: 100%;
 }
 
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
 #masthead-menu {
   display: flex;
   flex-direction: column;
@@ -843,20 +850,22 @@ body,
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 1em 0em;
 }
 .social-links-menu li {
   list-style-type: none;
   text-decoration: none;
 }
 .social-links-menu svg {
-  height: 1.333333333em;
-  width: 1.333333333em;
+  height: 1.25em;
+  width: 1.25em;
 }
 .social-links-menu a {
   transition: all 0.3s ease;
   text-decoration: none;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
   padding: .1em 1em;
   width: 60px;
@@ -879,7 +888,7 @@ body,
     display: none;
     padding-left: 1em;
     text-transform: uppercase;
-    font-size: 0.4218750003em;
+    font-size: 0.512em;
     letter-spacing: 0.15rem;
   }
 }
@@ -894,8 +903,9 @@ body,
     width: 35%;
   }
 
-  .site-navigation {
-    width: 55%;
+  .main-navigation {
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   #masthead-menu {

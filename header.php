@@ -43,7 +43,7 @@
 
 		<div class="site-header__menus">
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'whistlerdigital' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'whistlerdigital' ); ?></button>
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
