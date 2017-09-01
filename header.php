@@ -10,7 +10,7 @@
  */
 
 ?><!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,15 +51,21 @@
 					) );
 				?>
 			</nav><!-- #site-navigation -->
-			<div id="social-menu" class="social-links">
+			<?php
+			// Make sure there is a social menu to display.
+			if ( has_nav_menu( 'social' ) ) { ?>
+			<nav class="social-menu">
 				<?php
 					wp_nav_menu( array(
-						'theme_location' => 'menu-2',
+						'theme_location' => 'social',
 						'menu_class'     => 'social-links-menu',
-						'menu_id'        => 'social-menu',
+						'depth'          => 1,
+						'link_before'    => '<span class="social-links-menu--hidden-text">',
+						'link_after'     => '</span>' . whistlerdigital_get_svg( array( 'icon' => 'chain' ) ),
 					) );
 				?>
-			</div><!-- #social-menu -->
+			</nav><!-- .social-menu -->
+			<?php } ?>
 		</div>
 	</header><!-- #masthead -->
 

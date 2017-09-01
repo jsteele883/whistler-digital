@@ -305,6 +305,7 @@ h1, h2, h3, h4 {
 h1 {
   margin-top: 0;
   font-size: 3.160493824em;
+  text-align: center;
 }
 
 h2 {
@@ -758,6 +759,10 @@ a:hover, a:active {
 .content-area {
   -ms-flex: 1;
       flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .site-content .widget-area {
@@ -822,7 +827,8 @@ body,
 .site-title a {
   color: #FBFCFF;
   text-decoration: none;
-  font-size: 2.3703703686em;
+  font-size: 3.160493824em;
+  font-family: "furious_stylesregular", "Montserrat", Helvetica, serif;
 }
 
 .site-description {
@@ -864,13 +870,43 @@ body,
   list-style-type: none;
   text-decoration: none;
 }
-.social-links-menu a {
-  text-decoration: none;
-  display: block;
-  padding: .1em .5em;
+.social-links-menu svg {
+  height: 1.333333333em;
+  width: 1.333333333em;
 }
-.social-links-menu a:hover, .social-links-menu a:focus {
-  border-bottom: 2px solid #404040;
+.social-links-menu a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: .1em 1em;
+  width: 60px;
+  opacity: 0.7;
+}
+.social-links-menu a:hover {
+  opacity: 1;
+}
+.social-links-menu a .social-links-menu--hidden-text {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .social-links-menu a:hover {
+    width: 150px;
+  }
+  .social-links-menu a:hover .social-links-menu--hidden-text {
+    display: inline;
+  }
+  .social-links-menu a .social-links-menu--hidden-text {
+    display: none;
+    padding-left: 1em;
+    text-transform: uppercase;
+    font-size: 0.4218750003em;
+    letter-spacing: 0.15rem;
+  }
 }
 
 @media screen and (min-width: 900px) {

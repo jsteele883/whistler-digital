@@ -45,7 +45,7 @@ function whistlerdigital_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'whistlerdigital' ),
-		'menu-2' => esc_html__( 'Social Links Menu', 'whistlerdigital' ),
+		'social' => esc_html__( 'Social Media Menu', 'whistlerdigital' ),
 	) );
 
 	/*
@@ -211,3 +211,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+/**
+ * Load SVG icon functions.
+ */
+require get_template_directory() . '/inc/icon-functions.php';
