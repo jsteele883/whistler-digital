@@ -1,0 +1,12 @@
+.site-footer {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 1em;
+
+	.site-info p {
+		font-size: ms(-1);
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+}

@@ -771,12 +771,17 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 html,
 body,
-.site,
-.site-header {
+.site {
   height: 100%;
 }
 
+body {
+  background: linear-gradient(to bottom, #5d4157 0%, #a8caba 100%);
+  background-attachment: fixed;
+}
+
 .site-header {
+  height: 50%;
   position: relative;
   padding: 1em;
   font-family: "Montserrat", Helvetica, serif;
@@ -785,8 +790,6 @@ body,
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, #5d4157 0%, #a8caba 100%);
-  background-attachment: fixed;
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -923,6 +926,21 @@ body,
     align-items: flex-end;
   }
 }
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+}
+.site-footer .site-info p {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

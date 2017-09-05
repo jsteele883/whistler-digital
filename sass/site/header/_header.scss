@@ -1,11 +1,16 @@
 html,
 body,
-.site,
-.site-header {
+.site {
 	height: 100%;
 }
 
+body {
+	background: linear-gradient(to bottom, rgba(93,65,87,1) 0%, rgba(168,202,186,1) 100%);
+	background-attachment: fixed;
+}
+
 .site-header {
+	height: 50%;
 	position: relative;
 	padding: 1em;
 	font-family: $font__main;
@@ -14,8 +19,6 @@ body,
   justify-content: space-between;
   align-items: center;
 	flex-direction: column;
-	background: linear-gradient(to bottom, rgba(93,65,87,1) 0%, rgba(168,202,186,1) 100%);
-	background-attachment: fixed;
 
 	@media screen and (min-width: $query__small) {
 		padding: 1em 2em;
