@@ -626,6 +626,11 @@ a:hover, a:active {
     display: none;
   }
 
+  .main-navigation {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+
   .main-navigation ul {
     display: block;
   }
