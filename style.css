@@ -775,7 +775,7 @@ a:hover, a:active {
       justify-content: center;
 }
 
-.site-content .widget-area {
+.site-content .widget-area, .site-main {
   -ms-flex: 1;
       flex: 1;
 }
