@@ -41,17 +41,13 @@
 
 		<div class="site-header__menus">
 			<nav id="site-navigation" class="main-navigation">
-				<?php
-				// Make sure there is a social menu to display.
-				if ( has_nav_menu( 'primary' ) ) { ?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'whistlerdigital' ); ?></button>
 				<?php
 					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
+						'theme_location' => 'primary',
 						'menu_id'        => 'primary-menu',
 					) );
 				?>
-				<?php } ?>
 			</nav><!-- #site-navigation -->
 			<?php
 			// Make sure there is a social menu to display.

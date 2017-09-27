@@ -768,8 +768,12 @@ a:hover, a:active {
   justify-content: center;
 }
 
-.site-content .widget-area, .site-main {
+.site-content .widget-area {
   flex: 1;
+}
+
+.site-main {
+  flex: 0.8;
 }
 
 .page_item {
