@@ -53,3 +53,67 @@ function whistlerdigital_customize_preview_js() {
 	wp_enqueue_script( 'whistlerdigital_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'whistlerdigital_customize_preview_js' );
+
+// add new section
+$wp_customize->add_section( 'whistlerdigital_theme_colors', array(
+	'title' => __( 'Typography Colours', 'whistlerdigital' ),
+	'priority' => 100,
+) );
+
+// add color picker setting
+$wp_customize->add_setting( 'link_color', array(
+	'default' => '#404040'
+) );
+
+// add color picker setting
+$wp_customize->add_setting( 'body_color', array(
+	'default' => '#404040'
+) );
+
+// add link picker control
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
+	'label' => 'Link Color',
+	'section' => 'whistlerdigital_theme_colors',
+	'settings' => 'link_color',
+) ) );
+
+// add body picker control
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'body_color', array(
+	'label' => 'Body Color',
+	'section' => 'whistlerdigital_theme_colors',
+	'settings' => 'body_color',
+) ) );
+
+function whistlerdigital_customizer_head_styles() {
+	$link_color = get_theme_mod( 'link_color' );
+	$body_color = get_theme_mod( 'body_color' );
+
+	if ( $link_color != '#404040' ) :
+	?>
+		<style type="text/css">
+			a {
+				color: <?php echo $link_color; ?>;
+			}
+			.main-navigation a::after {
+				background: <?php echo $link_color; ?>;
+			}
+			.main-navigation .current_page_item a, .main-navigation .current-menu-item a, .main-navigation .current_page_ancestor a, .main-navigation .current-menu-ancestor a {
+				border-bottom: 2px solid <?php echo $link_color; ?>;
+			}
+			.social-links-menu svg {
+				fill: <?php echo $link_color; ?>;
+			}
+		</style>
+	<?php
+	endif;
+	if ( $body_color != '#404040' ) :
+	?>
+		<style type="text/css">
+			body {
+				color: <?php echo $body_color; ?>;
+			}
+		</style>
+	<?php
+	endif;
+}
+add_action( 'wp_head', 'whistlerdigital_customizer_head_styles' );
