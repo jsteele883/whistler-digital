@@ -268,7 +268,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: "Montserrat", Helvetica, serif;
+  font-family: "Open Sans", Helvetica, serif;
   font-size: 14.4px;
   font-size: 1.0125rem;
   line-height: 1.5;
@@ -295,7 +295,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-family: "furious_stylesregular", "Montserrat", Helvetica, serif;
+  font-family: "Open Sans", Helvetica, serif;
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
@@ -793,12 +793,10 @@ body,
   height: 50%;
   position: relative;
   padding: 1em;
-  font-family: "Montserrat", Helvetica, serif;
-  color: #FBFCFF;
+  font-family: "Open Sans", Helvetica, serif;
+  color: #02848e;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -822,10 +820,10 @@ body,
   line-height: 200%;
 }
 .site-title a {
-  color: #FBFCFF;
+  color: #02848e;
   text-decoration: none;
   font-size: 2.44140625em;
-  font-family: "furious_stylesregular", "Montserrat", Helvetica, serif;
+  font-family: "Open Sans", Helvetica, serif;
 }
 
 .site-description {
@@ -840,7 +838,7 @@ body,
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
-  width: 100%;
+  width: 50%;
 }
 
 .main-navigation {
@@ -908,7 +906,6 @@ body,
 @media screen and (min-width: 900px) {
   .site-header {
     display: flex;
-    flex-direction: column;
   }
 
   .site-branding {
