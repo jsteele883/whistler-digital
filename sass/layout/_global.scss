@@ -25,3 +25,19 @@
 .page_item {
   padding: 10px;
 }
+
+.l-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: $query__small) {
+    flex-direction: row;
+  }
+}
+
+.l-col-3 {
+  width: 100%;
+  @media screen and (min-width: $query__small) {
+    width: 33.333%;
+  }
+}

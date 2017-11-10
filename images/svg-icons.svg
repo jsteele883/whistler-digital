@@ -102,5 +102,8 @@
 <symbol id="icon-pause" viewBox="0 0 24 28">
 <path d="M24 3v22c0 0.547-0.453 1-1 1h-8c-0.547 0-1-0.453-1-1v-22c0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1zM10 3v22c0 0.547-0.453 1-1 1h-8c-0.547 0-1-0.453-1-1v-22c0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1z"></path>
 </symbol>
+<symbol id="icon-triangle" viewBox="0 0 24 28">
+  <polygon class="cls-1" points="1773.83 0 0 526.7 0 1079.89 1773.83 557.11 1773.83 0"/>
+</symbol>
 </defs>
 </svg>

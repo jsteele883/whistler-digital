@@ -5,13 +5,13 @@ body,
 }
 
 .site-header {
-	height: 50%;
 	position: relative;
 	padding: 1em;
 	font-family: $font__main;
 	color: $color__text-header;
 	display: flex;
   justify-content: space-between;
+	align-items: flex-start;
 
 	@media screen and (min-width: $query__small) {
 		padding: 1em 2em;
@@ -19,13 +19,15 @@ body,
 }
 
 .site-branding {
-	min-height: 65px;
-	height: 80%;
 	text-align: center;
 	display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+	img {
+		width: auto;
+		max-height: 150px;
+	}
 }
 
 .site-title {
@@ -52,7 +54,7 @@ body,
 .site-header__menus {
 	display: flex;
 	flex-direction: column-reverse;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	width: 50%;
 }
 
@@ -63,58 +65,36 @@ body,
 	align-items: center;
 }
 
-#masthead-menu {
-	display: flex;
-	flex-direction: column;
-	li {
-		list-style-type: none;
-	}
+.introduction {
+	padding-top: 15%;
+	padding-bottom: 15%;
+	background-size: 100% auto;
+	background-position: top;
+	background-repeat: no-repeat;
 }
 
-.social-links-menu {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	padding: 1em 0em;
-	li {
-		list-style-type: none;
-		text-decoration: none;
-	}
+.masthead-menu {
+	text-align: center;
+	padding: 5%;
+	height: 100%;
+}
+
+.masthead-menu__yellow {
+	background: $color__yellow;
+}
+
+.masthead-menu__orange {
+	background: $color__orange;
+}
+
+.masthead-menu__red {
+	background: $color__red;
+}
+
+.masthead-menu__icon {
 	svg {
-		height: ms(1);
-    width: ms(1);
-	}
-	a {
-		transition: all 0.3s ease;
-		text-decoration: none;
-		display: flex;
-    flex-direction: row-reverse;
-		justify-content: center;
-		align-items: center;
-		padding: .1em 1em;
-		width: 60px;
-		opacity: 0.7;
-		&:hover {
-			opacity: 1;
-		}
-		.social-links-menu--hidden-text {
-			display: none;
-		}
-		@media screen and (min-width: $query__medium) {
-			&:hover {
-				width: 150px;
-			}
-			&:hover .social-links-menu--hidden-text {
-				display: inline;
-			}
-		.social-links-menu--hidden-text {
-			display: none;
-			padding-left: 1em;
-			text-transform: uppercase;
-			font-size: ms(-3);
-			letter-spacing: 0.15rem;
-			}
-		}
+		max-width: 50%;
+		margin: 0 auto;
 	}
 }
 
@@ -129,18 +109,9 @@ body,
 
   .main-navigation {
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: flex-end;
   }
 
-	#masthead-menu {
-		flex-wrap: wrap;
-		flex-direction: row;
-		li {
-			flex: 1 0 33.333%;
-		  box-sizing: border-box;
-		  padding: 10px;
-		}
-	}
 	.site-header__menus {
 		flex-direction: row;
 		align-items: flex-end;

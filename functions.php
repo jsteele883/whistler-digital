@@ -117,6 +117,7 @@ function whistlerdigital_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'whistlerdigital' ),
 		'social' => esc_html__( 'Social Media Menu', 'whistlerdigital' ),
+		'menu-2' => esc_html__( 'Masthead Menu', 'whistlerdigital' ),
 	) );
 
 	/*
