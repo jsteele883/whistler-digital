@@ -2,6 +2,14 @@ p {
 	margin-bottom: 1.5em;
 }
 
+.content-area a {
+	border-bottom: 2px solid $color__link;
+	text-decoration: none;
+	&:hover {
+		border-bottom: none;
+	}
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }

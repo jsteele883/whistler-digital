@@ -268,7 +268,7 @@ select,
 optgroup,
 textarea {
   color: #0B132B;
-  font-family: "Open Sans", Helvetica, serif;
+  font-family: "Work Sans", Helvetica, serif;
   font-size: 14.4px;
   font-size: 1.0125rem;
   line-height: 1.5;
@@ -295,7 +295,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Open Sans", Helvetica, serif;
+  font-family: "Work Sans", Helvetica, serif;
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
@@ -326,6 +326,14 @@ small, .font_small {
 
 p {
   margin-bottom: 1.5em;
+}
+
+.content-area a {
+  border-bottom: 2px solid #404040;
+  text-decoration: none;
+}
+.content-area a:hover {
+  border-bottom: none;
 }
 
 dfn, cite, em, i {
@@ -463,8 +471,9 @@ input[type="submit"] {
   transition: 0.5s;
   text-decoration: none;
   text-transform: uppercase;
-  color: #5D4157;
-  border: 2px solid #5D4157;
+  color: #fff;
+  border: 2px solid #1D6CB4;
+  background: #1D6CB4;
   display: inline-block;
   padding: 1.5em;
 }
@@ -476,7 +485,7 @@ input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
   opacity: 1;
-  background: #5D4157;
+  background: #ccc #bbb #aaa;
   color: #fff;
 }
 
@@ -536,7 +545,8 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: #404040;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -587,8 +597,8 @@ a:hover, a:active {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 0.15rem;
+  font-size: 0.8em;
+  font-weight: 800;
 }
 .main-navigation a::after {
   content: '';
@@ -622,7 +632,7 @@ a:hover, a:active {
 
 .menu-toggle {
   padding-top: 1em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
   width: 60%;
 }
 
@@ -812,7 +822,7 @@ body,
 .site-header {
   position: relative;
   padding: 1em;
-  font-family: "Open Sans", Helvetica, serif;
+  font-family: "Work Sans", Helvetica, serif;
   color: #02848e;
   display: flex;
   justify-content: space-between;
@@ -845,7 +855,7 @@ body,
   color: #02848e;
   text-decoration: none;
   font-size: 2.44140625em;
-  font-family: "Open Sans", Helvetica, serif;
+  font-family: "Work Sans", Helvetica, serif;
 }
 
 .site-description {
@@ -873,7 +883,8 @@ body,
 .introduction {
   padding-top: 15%;
   padding-bottom: 15%;
-  background-size: 100% auto;
+  background: url(/wp-content/uploads/2017/11/triangle-bg-masthead.png);
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }

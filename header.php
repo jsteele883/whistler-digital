@@ -67,9 +67,7 @@
 				*/
 			?>
 
-		<div class="introduction" height="<?php echo esc_attr( get_custom_header()-> height); ?>" style="background: url(/wp-content/uploads/2017/11/triangle-bg-masthead.png); background-size: 100% auto;
-    background-position: top;
-    background-repeat: no-repeat;">
+		<div class="introduction" height="<?php echo esc_attr( get_custom_header()-> height); ?>">
 			<div class="l-row">
 	      <div class="l-col-3">
 					<div class="masthead-menu masthead-menu__yellow">
@@ -85,7 +83,7 @@
 	      <div class="l-col-3">
 					<div class="masthead-menu masthead-menu__orange">
 		        <div class="masthead-menu__icon">
-							<?php echo whistlerdigital_get_svg( array( 'icon' => 'wordpress', 'title' => __( 'This is the title', 'textdomain' ) ) ); ?>
+							<?php echo whistlerdigital_get_svg( array( 'icon' => 'chain', 'title' => __( 'This is the title', 'textdomain' ) ) ); ?>
 		        </div>
 		        <div class="masthead-menu__text">
 		          <h2>IT Consulting</h2>
@@ -96,7 +94,7 @@
 	      <div class="l-col-3">
 					<div class="masthead-menu masthead-menu__red">
 		        <div class="masthead-menu__icon">
-							<?php echo whistlerdigital_get_svg( array( 'icon' => 'mail-reply', 'title' => __( 'This is the title', 'textdomain' ) ) ); ?>
+							<?php echo whistlerdigital_get_svg( array( 'icon' => 'hashtag', 'title' => __( 'This is the title', 'textdomain' ) ) ); ?>
 		        </div>
 		        <div class="masthead-menu__text">
 		          <h2>Marketing</h2>
