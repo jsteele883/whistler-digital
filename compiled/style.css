@@ -602,7 +602,6 @@ a:hover, a:active {
   color: #0B132B;
 }
 .main-navigation a:hover {
-  color: #5D4157;
   font-weight: 800;
 }
 .main-navigation .current_page_item a,
@@ -797,14 +796,8 @@ a:hover, a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 .site-content {
-  padding: 1em;
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 600px) {
-  .site-content {
-    padding: 2em;
-  }
 }
 
 .content-area {
