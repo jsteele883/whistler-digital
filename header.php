@@ -21,10 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site" style="background: url(/wp-content/uploads/2017/11/triangle-bg-header.png);
-		background-size: 100% auto;
-    background-position: top;
-    background-repeat: no-repeat;">
+<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'whistlerdigital' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -44,7 +41,11 @@
 
 		<div class="site-header__menus">
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'whistlerdigital' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'primary',

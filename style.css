@@ -329,7 +329,7 @@ p {
 }
 
 .content-area a {
-  border-bottom: 2px solid #404040;
+  border-bottom: 2px solid #3B818B;
   text-decoration: none;
 }
 .content-area a:hover {
@@ -544,7 +544,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #404040;
+  color: #3B818B;
   transition: all 0.5s ease;
   text-decoration: none;
 }
@@ -563,6 +563,8 @@ a:hover, a:active {
   clear: both;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
   width: 100%;
 }
 .main-navigation ul {
@@ -595,28 +597,15 @@ a:hover, a:active {
   position: relative;
 }
 .main-navigation a {
-  display: block;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #0B132B;
+}
+.main-navigation a:hover {
+  color: #5D4157;
   font-weight: 800;
-}
-.main-navigation a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #0B132B;
-  transition: width .3s;
-}
-.main-navigation a:hover::after {
-  width: 100%;
-}
-.main-navigation .children li:hover {
-  background-color: #5D4157;
-}
-.main-navigation .children a::after {
-  height: 0px;
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a,
@@ -628,13 +617,62 @@ a:hover, a:active {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .menu-toggle {
   padding-top: 1em;
   padding-bottom: 1em;
   width: 60%;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.menu-toggle .icon-bar {
+  color: #0B132B;
+  height: 3px;
+  margin-top: 4px;
+}
+
+.menu-toggle {
+  height: 50px;
+  width: 50px;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.menu-toggle .icon-bar {
+  width: 28px;
+  background: #0B132B;
+  transition: .5s ease;
+}
+
+.menu-toggle .icon-bar:nth-child(1) {
+  transform: rotate(0) translateY(0) translateX(0);
+}
+
+.menu-toggle .icon-bar:nth-child(2) {
+  opacity: 1;
+}
+
+.menu-toggle .icon-bar:nth-child(3) {
+  transform: rotate(0) translateY(0) translateX(0);
+}
+
+.toggled .menu-toggle .icon-bar:nth-child(1) {
+  transform: rotate(-45deg) translateY(5px) translateX(-5px);
+}
+
+.toggled .menu-toggle .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.toggled .menu-toggle .icon-bar:nth-child(3) {
+  transform: rotate(45deg) translateY(-4px) translateX(-3px);
 }
 
 @media screen and (min-width: 37.5em) {
@@ -832,11 +870,18 @@ body,
   height: 100%;
 }
 
+body {
+  background: url(/wp-content/uploads/2017/11/triangle-top.png);
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
 .site-header {
   position: relative;
   padding: 1em;
   font-family: "Work Sans", Helvetica, serif;
-  color: #02848e;
+  color: #0B132B;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -872,7 +917,7 @@ body,
   line-height: 200%;
 }
 .site-title a {
-  color: #02848e;
+  color: #0B132B;
   text-decoration: none;
   font-size: 2.44140625em;
   font-family: "Work Sans", Helvetica, serif;
@@ -889,8 +934,6 @@ body,
 .site-header__menus {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
   -ms-flex-pack: end;
       justify-content: flex-end;
   width: 50%;
@@ -901,16 +944,16 @@ body,
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .introduction {
-  padding-top: 15%;
-  padding-bottom: 15%;
-  background: url(/wp-content/uploads/2017/11/triangle-bg-masthead.png);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: url(/wp-content/uploads/2017/11/triangle-middle.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -935,8 +978,9 @@ body,
 }
 
 .masthead-menu__icon svg {
-  max-width: 50%;
+  max-width: 40%;
   margin: 0 auto;
+  fill: #0B132B;
 }
 
 @media screen and (min-width: 900px) {
@@ -973,6 +1017,11 @@ body,
   -ms-flex-pack: center;
       justify-content: center;
   padding: 1em;
+  padding-top: 10%;
+  background: url(/wp-content/uploads/2017/11/triangle-bottom.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 .site-footer .site-info p {
   font-size: 0.8em;

@@ -4,6 +4,13 @@ body,
 	height: 100%;
 }
 
+body {
+	background: url(/wp-content/uploads/2017/11/triangle-top.png);
+	background-size: 100% auto;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
 .site-header {
 	position: relative;
 	padding: 1em;
@@ -53,7 +60,6 @@ body,
 
 .site-header__menus {
 	display: flex;
-	flex-direction: column-reverse;
 	justify-content: flex-end;
 	width: 50%;
 }
@@ -61,14 +67,14 @@ body,
 .main-navigation {
 	display: flex;
 	justify-content: center;
-	flex-direction: column-reverse;
-	align-items: center;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .introduction {
-	padding-top: 15%;
-	padding-bottom: 15%;
-	background: url(/wp-content/uploads/2017/11/triangle-bg-masthead.png);
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background: url(/wp-content/uploads/2017/11/triangle-middle.png);
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -94,8 +100,9 @@ body,
 
 .masthead-menu__icon {
 	svg {
-		max-width: 50%;
+		max-width: 40%;
 		margin: 0 auto;
+		fill: $color__text-main;
 	}
 }
 
